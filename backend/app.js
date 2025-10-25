@@ -21,3 +21,6 @@ app.use('/api/cartwishlist', require('./routes/cartWishlistRoutes'));
 app.use(errorHandler);
 
 module.exports = app;
+app.get('/', (req, res) => {
+  res.send('Backend is running!');
+});
